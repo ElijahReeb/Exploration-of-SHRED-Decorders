@@ -1,0 +1,23 @@
+Running experiment with 5 lag...
+Training epoch 1
+Error tensor(0.4875)
+Training epoch 20
+Error tensor(0.2531)
+Training epoch 40
+Error tensor(0.2315)
+Training epoch 60
+Error tensor(0.2265)
+Training epoch 80
+Error tensor(0.2250)
+Training epoch 100
+Error tensor(0.2240)
+Training epoch 120
+Error tensor(0.2225)
+Training epoch 140
+Error tensor(0.2217)
+Training epoch 160
+Error tensor(0.2214)
+Training epoch 180
+Error tensor(0.2201)
+Training epoch 200
+Error tensor(0.2193)

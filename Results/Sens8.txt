@@ -1,0 +1,24 @@
+Running experiment with 8 sensors...
+Training epoch 1
+Error tensor(0.4747)
+Training epoch 20
+Error tensor(0.2278)
+Training epoch 40
+Error tensor(0.2129)
+Training epoch 60
+Error tensor(0.2050)
+Training epoch 80
+Error tensor(0.1955)
+Training epoch 100
+Error tensor(0.1839)
+Training epoch 120
+Error tensor(0.1654)
+Training epoch 140
+Error tensor(0.1619)
+Training epoch 160
+Error tensor(0.1569)
+Training epoch 180
+Error tensor(0.1532)
+Training epoch 200
+Error tensor(0.1457)
+0.02627159

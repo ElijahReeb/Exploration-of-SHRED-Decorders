@@ -1,0 +1,24 @@
+Running experiment with noise standard deviation 0.01...
+Training epoch 1
+Error tensor(0.4758)
+Training epoch 20
+Error tensor(0.2507)
+Training epoch 40
+Error tensor(0.2191)
+Training epoch 60
+Error tensor(0.2160)
+Training epoch 80
+Error tensor(0.2166)
+Training epoch 100
+Error tensor(0.2074)
+Training epoch 120
+Error tensor(0.2024)
+Training epoch 140
+Error tensor(0.1946)
+Training epoch 160
+Error tensor(0.1984)
+Training epoch 180
+Error tensor(0.1882)
+Training epoch 200
+Error tensor(0.1706)
+0.03012426
