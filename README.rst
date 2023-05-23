@@ -38,7 +38,6 @@ After training the model, it is very simple to compare the model accuracy to tha
   test_ground_truth = sc.inverse_transform(test_dataset.Y.detach().cpu().numpy())
   print(np.linalg.norm(test_recons - test_ground_truth) / np.linalg.norm(test_ground_truth))
 
-
 Computational Results
 ^^^^^^^^^^^^
 Next the hyperparameters will be the focus. When observing the results of training this model the starting values of 3 sensors and a lag of 52 was used. The results of training that model are plotted below. One can observe that after about 200 epochs there was not as much improvement. This model took a very long time to run so 100 less epochs could save 15 minutes.
@@ -49,10 +48,9 @@ This use of 200 epochs was used for the later testing. Three main parameters wer
 
 .. image:: https://github.com/ElijahReeb/UW-EE399-Assignment-6/assets/130190276/82e19c92-eca9-4c22-a082-bb3081d54d01
 
-
 Finally after training the models under different parameters the data was compared to a ground truth dataset to determine the overall error of the model. Those are plotted below in the bar graphs and will be discussed later. We are able to see relatively similar error around 0.03.
 
-.. image:: https://github.com/ElijahReeb/UW-EE399-Assignment-6/assets/130190276/6d2ce65e-5ac4-4f62-9a9c-1804b54a95de
+.. image:: https://github.com/ElijahReeb/UW-EE399-Assignment-6/assets/130190276/beffa49c-88f5-4374-8a60-3e09e0813ab3
 
 
 Summary and Conclusions
@@ -61,7 +59,6 @@ The conclusions will be separated into the three main areas of change. First, co
 Next, comparing the lag amount. There is again not as much difference in these values. A lag of 1 is clearly worse but it is difficult to draw much other conclusion based on this range of lags. Perhaps a range extending from 100 to 2000 may create different data. This is unknown but it is unclear the influence lag has on the training. 
 Last, as gaussian noise was added to the data. From initial attempts, it appeared large amounts of noise were not possible to add to the data. This relatively small range of noise amounts shows that the model has very comparable error to that without noise. This is valuable and shows the robustness of a model like this. 
 In summary, the tuning of the parameters did not produce wildly different results. Perhaps if training took less time a large range could be attempted. The real value is shown by the minimal error that is created with a small set of the data and how it allows for a mapping of a much larger set of data.
-
 
 Previous ReadMe from Previous Authors
 ^^^^^^^^^^^^
