@@ -1,7 +1,6 @@
-
-
 UW-EE399-Assignment-6
 =========
+
 
 Project Author: Elijah Reeb, elireeb@uw.edu, Other Authors cited at bottom
 
@@ -11,6 +10,7 @@ Homework 6
 ---------------------
 Introduction
 ^^^^^^^^^^^^
+This assignment involves hyperparameter tuning 
 
 
 Theoretical Backgroud
@@ -23,12 +23,15 @@ Algorithm Implementation and Development
 
 .. code-block:: text
 
+
 Computational Results
 ^^^^^^^^^^^^
+:: image ![image](https://github.com/ElijahReeb/UW-EE399-Assignment-6/assets/130190276/6d2ce65e-5ac4-4f62-9a9c-1804b54a95de)
 
 
 Summary and Conclusions
 ^^^^^^^^^^^^
+
 
 
 Previous ReadMe from Previous Authors
