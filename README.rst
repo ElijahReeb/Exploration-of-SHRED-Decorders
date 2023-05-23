@@ -30,6 +30,14 @@ The main algorithm behind this assignment is the SHRED model. This is a Shallow 
      shred = models.SHRED(num_sensors, m, hidden_size=64, hidden_layers=2, l1=350, l2=400, dropout=0.1).to(device)
 
 From examination of this line of code we are able to determine the decoding basis. The num_sensors is the first small layer that is the input. The hidden layers are much larger at 64 and then moving to 350 and 400. This shows the massive extrapolation from 3 or so to 400. Additionally, less relevant to this model in particular, but this model uses a dropout stage. This means that some amount of the weights are just randomly set to 0. This helps to reduce over tuning of the model. 
+After training the model, it is very simple to compare the model accuracy to that of a set ground-truth. In early stages of model development it is ideal to have a goal in mind. In this case a massive amount of sensor data to later compare a minimal extrapolation of sensor prediction. 
+
+.. code-block:: text
+
+  test_recons = sc.inverse_transform(shred(test_dataset.X).detach().cpu().numpy())
+  test_ground_truth = sc.inverse_transform(test_dataset.Y.detach().cpu().numpy())
+  print(np.linalg.norm(test_recons - test_ground_truth) / np.linalg.norm(test_ground_truth))
+
 
 Computational Results
 ^^^^^^^^^^^^
@@ -49,7 +57,10 @@ Finally after training the models under different parameters the data was compar
 
 Summary and Conclusions
 ^^^^^^^^^^^^
-
+The conclusions will be separated into the three main areas of change. First, comparing the error of the sensors we see a slight decrease in error as the number of sensors increase. However, this is all very comparable. Perhaps it would have been better to compare low sensor amounts to values of sensors 10 to 50. Nonetheless, there is a very low amount of error considering the amount of ground (ocean) that is being covered by 3 randomly placed sensors. 
+Next, comparing the lag amount. There is again not as much difference in these values. A lag of 1 is clearly worse but it is difficult to draw much other conclusion based on this range of lags. Perhaps a range extending from 100 to 2000 may create different data. This is unknown but it is unclear the influence lag has on the training. 
+Last, as gaussian noise was added to the data. From initial attempts, it appeared large amounts of noise were not possible to add to the data. This relatively small range of noise amounts shows that the model has very comparable error to that without noise. This is valuable and shows the robustness of a model like this. 
+In summary, the tuning of the parameters did not produce wildly different results. Perhaps if training took less time a large range could be attempted. The real value is shown by the minimal error that is created with a small set of the data and how it allows for a mapping of a much larger set of data.
 
 
 Previous ReadMe from Previous Authors
