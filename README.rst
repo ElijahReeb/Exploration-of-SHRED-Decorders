@@ -1,4 +1,4 @@
-UW-EE399-Assignment-6
+Exploration of SHRED Decorders
 =========
 This holds the code and backing for the sixth assignment of the EE399 class. The main dataset this assignment revolves around is Sea Surface Temperatures collected globally. These data are fed into a Shallow Recurrent Decoder to demonstrate the extrapolation capabilities of neural network models.
 
